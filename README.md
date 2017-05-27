@@ -1,4 +1,4 @@
-<h1>A boilerplate for React with Ant design.</h1>
+<h1>Findyou Project</h1>
 
 <h3>Main packages:</h3>
 <ul>
@@ -16,5 +16,5 @@
     <li>"redux-thunk": "^2.2.0"</li>
     <li>"react-helmet":"5.1.3"</li>
     <li>"request":"2.81.0"</li>
-    <li>"request-promise"</li>
+    <li>"request-promise":"4.2.1"</li>
 </ul>

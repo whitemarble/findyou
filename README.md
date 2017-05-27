@@ -17,4 +17,5 @@
     <li>"react-helmet":"5.1.3"</li>
     <li>"request":"2.81.0"</li>
     <li>"request-promise":"4.2.1"</li>
+    <li>"react-fontawesome": "^1.6.1"</li>
 </ul>

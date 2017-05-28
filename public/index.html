@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="/css/font-awesome.min.css">
   </head>
   <body>
+    
+    <div id="root"></div>
     <script>
       // 国际化polyfill
       // 我们这里采用的做法是直接判断 window.Intl 是否存在，从而确定是否要引入 polyfill 文件
       if (!window.Intl) {
-        document.writeln('<script src="https://as.alipayobjects.com/g/component/intl/1.0.1/Intl.js">' + '<' + '/script>');
-        document.writeln('<script src="https://as.alipayobjects.com/g/component/intl/1.0.1/locale-data/jsonp/en.js">' + '<' + '/script>');
-        document.writeln('<script src="https://as.alipayobjects.com/g/component/intl/1.0.1/locale-data/jsonp/zh.js">' + '<' + '/script>');
+        document.writeln('<script src="/assets/js/Intl.js">' + '<' + '/script>');
+        document.writeln('<script src="/assets/js/en.js">' + '<' + '/script>');
+        document.writeln('<script src="/assets/js/zh.js">' + '<' + '/script>');
       }
     </script>
-    <div id="root"></div>
-    
     
   </body>
 </html>

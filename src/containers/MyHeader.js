@@ -5,7 +5,6 @@ import { Button } from 'antd';
 
 class MyHeader extends Component {
     render() {
-        const{Chinese,English} = this.props;
         return (
             <ul>
                 <li><Link to="/">Home</Link></li>

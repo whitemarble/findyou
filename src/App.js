@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import {LocaleProvider} from 'antd';
-import MyHeader from './containers/MyHeader'
-import './App.css';
 import {BrowserRouter as Router,browserHistory} from 'react-router-dom';
-import Page from './components/Page';
-
+import {LocaleProvider} from 'antd';
 import { IntlProvider,addLocaleData } from 'react-intl';
 import enLocaleData from 'react-intl/locale-data/en'
 import zhLocaleData from 'react-intl/locale-data/zh'
 import antdEn from 'antd/lib/locale-provider/en_US';
-import enUS from '../public/assets/locales/enUS.json';
-import zhCN from '../public/assets/locales/zhCN.json';
+import enUS from './locales/enUS.json';
+import zhCN from './locales/zhCN.json';
+
+import MyHeader from './containers/MyHeader'
+import Page from './components/Page';
+import './App.css';
+
 
 
 

@@ -5,17 +5,28 @@ import './App.css';
 import { connect } from 'react-redux';
 import {BrowserRouter as Router,browserHistory} from 'react-router-dom';
 import Page from './components/Page';
+import { IntlProvider,addLocaleData } from 'react-intl';
+import enLocaleData from 'react-intl/locale-data/en'
+import zhLocaleData from 'react-intl/locale-data/zh'
+addLocaleData([
+  ...enLocaleData,
+  ...zhLocaleData,
+])
 
 class App extends Component {
   render() {
     return (
       <Router history={browserHistory}>
-        <div className="App">
-          <MyHeader />
-          <LocaleProvider locale={this.props.locale}>
-            <Page />
-          </LocaleProvider>
-        </div>
+        <LocaleProvider locale={this.props.antd}>
+          <IntlProvider locale={this.props.locale} messages={this.props.messages}>
+            <div className="App">
+              <MyHeader />
+                
+                  <Page />
+                
+            </div>
+          </IntlProvider>
+        </LocaleProvider>
       </Router>
     );
   }
@@ -24,7 +35,9 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    locale: state.MyHeaderReducer.locale
+    antd: state.MyHeaderReducer.antd,
+    locale: state.MyHeaderReducer.locale,
+    messages: state.MyHeaderReducer.messages
   }
 }
 

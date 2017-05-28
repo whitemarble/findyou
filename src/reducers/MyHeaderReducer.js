@@ -1,17 +1,33 @@
+import antdEn from 'antd/lib/locale-provider/en_US';
+import enUS from '../../public/assets/locales/enUS.json';
+import zhCN from '../../public/assets/locales/zhCN.json';
+
+
+
 const initialState = {
-    locale:null
+    locale:'en-US',
+    messages:enUS,
+    antd:antdEn
 }
 
-const MyButtonReducer = (state=initialState,action)=>{
+const MyHeaderReducer = (state=initialState,action)=>{
     switch(action.type)
     {
         case 'C':
         return {
-            locale: action.payload
+            locale:'zh-Hans-CN',
+            messages:{
+                ...zhCN
+            },
+            antd:null
         };
         case 'E':
         return {
-            locale: action.payload
+            locale:'en-US',
+            messages:{
+                ...enUS
+            },
+            antd:antdEn
         };
         default:
         return state;
@@ -19,4 +35,4 @@ const MyButtonReducer = (state=initialState,action)=>{
     
 }
 
-export default MyButtonReducer
+export default MyHeaderReducer

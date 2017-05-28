@@ -11,15 +11,20 @@ import myApp from './reducers';
 
 
 
+
+
 let store = createStore(myApp, applyMiddleware(thunk,promise));
 
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+    <Provider store={store}>   
+        <App />
+    </Provider>
+  ,
   document.getElementById('root')
 );
+
+
 
 
 console.log(store.getState());

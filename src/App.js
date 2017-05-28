@@ -34,18 +34,18 @@ class App extends Component {
   
   render() {
     return (
-      <Router history={browserHistory}>
-        <LocaleProvider locale={this.state.antd}>
-          <IntlProvider locale={this.state.locale} messages={this.state.messages}>
-            <div className="App">
-              <MyHeader />
-                
-                  <Page />
-                
-            </div>
-          </IntlProvider>
-        </LocaleProvider>
-      </Router>
+      <LocaleProvider locale={this.state.antd}>
+        <IntlProvider locale={this.state.locale} messages={this.state.messages}>
+          <Router history={browserHistory}>
+          <div className="App">
+            <MyHeader />
+              
+                <Page />
+              
+          </div>
+          </Router>
+        </IntlProvider>
+      </LocaleProvider>
     );
   }
 }

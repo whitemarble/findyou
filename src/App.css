@@ -1,0 +1,20 @@
+
+.inputSearch{
+  font-weight: bold;
+  width: 50% ;
+  border:solid black;
+    margin-right: 2em;
+
+}
+
+.categoryMenu{
+display: inline-block;
+border:solid blue;
+ margin-left: 2em;
+}
+.background_color{
+	background: #4285F4;
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+}

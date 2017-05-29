@@ -8,6 +8,7 @@ import antdEn from 'antd/lib/locale-provider/en_US';
 import enUS from './locales/enUS.json';
 import zhCN from './locales/zhCN.json';
 
+import Searchbar from './containers/Searchbar'
 import MyHeader from './containers/MyHeader'
 import Page from './components/Page';
 import './App.css';
@@ -38,9 +39,7 @@ class App extends Component {
         <LocaleProvider locale={this.state.antd}>
           <IntlProvider locale={this.state.locale} messages={this.state.messages}>
             <div className="App">
-              <MyHeader />
-                
-                  <Page />
+            <Searchbar/>
                 
             </div>
           </IntlProvider>

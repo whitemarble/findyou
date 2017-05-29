@@ -1,6 +1,7 @@
 export const buttonClicked = ()=>{
     return{
         type:'C',
-        payload:"已经点击"
+        payload:"已经点击",
+        balala:"dsfsdfsdf"
     }
 }

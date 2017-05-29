@@ -1,10 +1,16 @@
 
 .inputSearch{
   font-weight: bold;
-  width: 50% ;
+  width: 100% ;
   border:solid black;
     margin-right: 2em;
 
+}
+
+.searchbar{
+	margin-left: 4em;
+	 width: 80% ;
+	/* line-height: 4em;*/
 }
 
 .categoryMenu{

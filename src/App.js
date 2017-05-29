@@ -9,8 +9,8 @@ import enUS from './locales/enUS.json';
 import zhCN from './locales/zhCN.json';
 
 import Searchbar from './containers/Searchbar'
-import MyHeader from './containers/MyHeader'
-import Page from './components/Page';
+// import MyHeader from './containers/MyHeader'
+// import Page from './components/Page';
 import './App.css';
 
 

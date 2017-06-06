@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .right-bottom{
  text-align:center;
  position:fixed;
@@ -25,3 +26,31 @@
     border:1px solid #333;
     display:inline-block;
 }
+=======
+
+.inputSearch{
+  font-weight: bold;
+  width: 100% ;
+  border:solid black;
+    margin-right: 2em;
+
+}
+
+.searchbar{
+	margin-left: 4em;
+	 width: 80% ;
+	/* line-height: 4em;*/
+}
+
+.categoryMenu{
+display: inline-block;
+border:solid blue;
+ margin-left: 2em;
+}
+.background_color{
+	background: #4285F4;
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+>>>>>>> 0db157ffd6307045bec39a8a22bd5a5a1308d397

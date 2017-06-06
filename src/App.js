@@ -8,8 +8,14 @@ import antdEn from 'antd/lib/locale-provider/en_US';
 import enUS from './locales/enUS.json';
 import zhCN from './locales/zhCN.json';
 
+<<<<<<< HEAD
 import Page from './components/Page';
 import RightBottom from './components/RightBottom';
+=======
+import Searchbar from './containers/Searchbar'
+// import MyHeader from './containers/MyHeader'
+// import Page from './components/Page';
+>>>>>>> 0db157ffd6307045bec39a8a22bd5a5a1308d397
 import './App.css';
 
 
@@ -34,6 +40,7 @@ class App extends Component {
   
   render() {
     return (
+<<<<<<< HEAD
       <LocaleProvider locale={this.state.antd}>
         <IntlProvider locale={this.state.locale} messages={this.state.messages}>
           <Router history={browserHistory}>
@@ -44,6 +51,18 @@ class App extends Component {
           </Router>
         </IntlProvider>
       </LocaleProvider>
+=======
+      <Router history={browserHistory}>
+        <LocaleProvider locale={this.state.antd}>
+          <IntlProvider locale={this.state.locale} messages={this.state.messages}>
+            <div className="App">
+            <Searchbar/>
+                
+            </div>
+          </IntlProvider>
+        </LocaleProvider>
+      </Router>
+>>>>>>> 0db157ffd6307045bec39a8a22bd5a5a1308d397
     );
   }
 }

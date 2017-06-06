@@ -1,0 +1,27 @@
+.right-bottom{
+ text-align:center;
+ position:fixed;
+ right:20px;
+ bottom:30px;
+}
+
+.right-bottom button{
+    margin-bottom:8px
+}
+
+.right-bottom .ant-btn-circle{
+    width:40px;
+    height:40px;
+    font-size:22px
+}
+.card-list{
+    text-align:center;
+}
+.infocard{
+    text-align:left;
+    min-width:300px;
+    width:20%;
+    height:350px;
+    border:1px solid #333;
+    display:inline-block;
+}

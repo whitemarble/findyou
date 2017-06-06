@@ -8,8 +8,8 @@ import antdEn from 'antd/lib/locale-provider/en_US';
 import enUS from './locales/enUS.json';
 import zhCN from './locales/zhCN.json';
 
-import MyHeader from './containers/MyHeader'
 import Page from './components/Page';
+import RightBottom from './components/RightBottom';
 import './App.css';
 
 
@@ -38,10 +38,8 @@ class App extends Component {
         <IntlProvider locale={this.state.locale} messages={this.state.messages}>
           <Router history={browserHistory}>
           <div className="App">
-            <MyHeader />
-              
-                <Page />
-              
+            <Page />
+            <RightBottom />
           </div>
           </Router>
         </IntlProvider>

@@ -1,4 +1,10 @@
-<<<<<<< HEAD
+/*layout--------------------------------------------*/
+.main-content{
+    margin-top:80px
+}
+
+
+/*Right bottom--------------------------------------------*/
 .right-bottom{
  text-align:center;
  position:fixed;
@@ -15,42 +21,105 @@
     height:40px;
     font-size:22px
 }
+
+/*Card List & Card--------------------------------------------*/
 .card-list{
     text-align:center;
 }
 .infocard{
     text-align:left;
-    min-width:300px;
-    width:20%;
-    height:350px;
-    border:1px solid #333;
+    width:360px;
+    /*border:1px solid #333;*/
     display:inline-block;
-}
-=======
-
-.inputSearch{
-  font-weight: bold;
-  width: 100% ;
-  border:solid black;
-    margin-right: 2em;
-
+    padding:10px 5px;
 }
 
-.searchbar{
-	margin-left: 4em;
-	 width: 80% ;
-	/* line-height: 4em;*/
+.infocard-top img{
+    width:100%;
 }
 
-.categoryMenu{
-display: inline-block;
-border:solid blue;
- margin-left: 2em;
+.infocard-bot{
+    padding-left:5px;
+    padding-right:5px;
 }
-.background_color{
-	background: #4285F4;
-  -vendor-animation-duration: 3s;
-  -vendor-animation-delay: 2s;
-  -vendor-animation-iteration-count: infinite;
+
+.infocard-bot img{
+    width:60px;
+    display:inline-block;
+    border-radius: 50%;
+    margin-right:5px
 }
->>>>>>> 0db157ffd6307045bec39a8a22bd5a5a1308d397
+
+
+.infocard-content{
+    display:inline-block;
+    vertical-align: top;
+    width:273px
+}
+
+.infocard-content h3{
+    line-height:1.2rem
+}
+.infocard-content p{
+    border-top:1px solid #ddd;
+    width:273px;
+    position:absolute;
+    bottom:5px
+}
+.infocard-content .location{
+    float:right
+}
+
+.infocard .ant-card-body{
+    padding:0px
+}
+
+.infocard-overlayer{
+    position:absolute;
+    top:0px;
+    background:rgba(0,0,0,0.5);
+    height:217.5px;
+    width:100%;
+    opacity: 0;
+    color:#eee;
+    z-index:5;
+    padding:35px 15px;
+    text-align:justify;
+    font-size:0.9rem;
+    -webkit-transition: opacity 1s; /* Safari */
+    transition: opacity 1s;
+}
+
+.infocard-top:hover .infocard-overlayer{
+    opacity: 1
+}
+
+.infocard-top .fav{
+    z-index:10;
+    position:absolute;
+    top:5px;
+    right:10px;
+    color:#ddd;
+    font-size:1.2rem;
+}
+
+.infocard-top .fav:hover{
+    color:#f46e65;
+}
+
+.infocard .rate{
+    position:absolute;
+    top:5px;
+    left:10px;
+    z-index:10;
+    font-size:1rem;
+    color:#ffce3d
+}
+
+.infocard .count{
+    position:absolute;
+    top:195px;
+    right:10px;
+    z-index:10;
+    color:#ddd;
+}

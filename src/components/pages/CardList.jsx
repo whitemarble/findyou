@@ -16,6 +16,8 @@ class Home extends Component {
                 <InfoCard />
                 <InfoCard />
                 <InfoCard />
+                <InfoCard />
+                <InfoCard />
             </div>
         );
     }

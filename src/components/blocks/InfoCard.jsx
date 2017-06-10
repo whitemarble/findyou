@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Card} from 'antd';
+import {Card,Tooltip} from 'antd';
 
 import myIMG from '../../../public/assets/img/placeholder.jpg';
 import myAvatar from '../../../public/assets/img/avatar.jpg';
@@ -27,7 +27,9 @@ class InfoCard extends Component {
                         </div>
                     </div>
                     <div className="infocard-bot">
-                        <img src={myAvatar} alt="avatar"/>
+                        <Tooltip placement="topLeft" title="username">
+                            <img src={myAvatar} alt="avatar"/>
+                        </Tooltip>
                         <div className="infocard-content">
                             <h3>Any Two Traditional Thai Mains for Two People</h3>
                             <p><FA name="bookmark"/> Category | <FA name="tags"/> tag1 tag2<span className="location"><FA name="globe"/> Auckland</span></p>
